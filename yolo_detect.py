@@ -39,9 +39,9 @@ def yolo_detect(frame):
         cv2.putText(img, label, (int(x-10), int(y-10)),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
-    cv2.imwrite('robot.jpg', frame)
+    cv2.imwrite('sense.jpg', frame)
 
-    image = cv2.imread('robot.jpg')
+    image = cv2.imread('sense.jpg')
 
     Width = image.shape[1]
     Height = image.shape[0]
@@ -98,9 +98,5 @@ def yolo_detect(frame):
         draw_prediction(image, class_ids[i], confidences[i], round(
             x), round(y), round(x+w), round(y+h))
 
-    # cv2.imread(image)
     cv2.imshow("object detection", image)
     cv2.waitKey()
-
-    # cv2.imwrite("object-detection.jpg", image)
-    # cv2.destroyAllWindows()

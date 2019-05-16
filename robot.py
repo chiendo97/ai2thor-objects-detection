@@ -13,13 +13,15 @@ controller.start()
 # Bedrooms: FloorPlan301 - FloorPlan330
 # Bathrooms: FloorPLan401 - FloorPlan430
 
-controller.reset('FloorPlan2')
+controller.reset('FloorPlan3')
 event = controller.step(dict(
     action='Initialize',
     gridSize=0.25,
-    cameraY=0.75,
-    qualitySetting='MediumCloseFitShadows',
-    renderImage=True, renderDepthImage=True, renderClassImage=True, renderObjectImage=True))
+    renderImage=True,
+    renderDepthImage=True,
+    renderClassImage=True,
+    renderObjectImage=True
+))
 
 rotationCorner = 30
 
@@ -50,4 +52,4 @@ while True:
     elif key == 'k':
         event = controller.step(dict(action='LookUp'))
 
-    yolo_detect(event.frame)
+    yolo_detect(event.cv2image())
