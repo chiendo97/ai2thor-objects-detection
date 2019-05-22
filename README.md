@@ -24,7 +24,9 @@ python robot.py
 ```
 
 ### Usage
+
 Use key to make action with robot: 
+
 | key 	| action 	|
 |:---:	|:-------------:	|
 | w 	| move forward 	|
