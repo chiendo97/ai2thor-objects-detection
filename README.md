@@ -23,6 +23,19 @@ pip install -r requirements.txt
 python robot.py
 ```
 
+### Usage
+Use key to make action with robot: 
+| key 	| action 	|
+|:---:	|:-------------:	|
+| w 	| move forward 	|
+| d 	| move right 	|
+| s 	| move backward 	|
+| a 	| move left 	|
+| h 	| turn left 	|
+| j 	| look down 	|
+| k 	| look up 	|
+| l 	| turn right 	|
+
 ## Built With
 
 * [Ai2thor](https://github.com/allenai/ai2thor) - The framework used
