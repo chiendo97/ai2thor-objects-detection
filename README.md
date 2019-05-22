@@ -15,6 +15,7 @@ What things you need to install the software and how to install them
 Install requirements from requirements.txt
 ```
 pip install -r requirements.txt
+sh download_weights.sh # downloads the pretrained weights for the depth estimation network, yolov3 trained on THOR
 ```
 
 ### Running
